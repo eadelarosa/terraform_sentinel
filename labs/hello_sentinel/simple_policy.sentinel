@@ -1,0 +1,8 @@
+# Every policy MUST HAVE a main rule; this is the rule that is evaluated to determine the result of a policy
+
+hour = 4 
+past_midnight = rule { hour >= 0 }
+before_noon = rule { hour < 12}
+
+main = rule { past_midnight  and before_noon }
+

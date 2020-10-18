@@ -1,0 +1,5 @@
+# Every policy MUST HAVE a main rule; this is the rule that is evaluated to determine the result of a policy
+
+hour = 4 
+main = rule { hour >= 0  and hour < 12 }
+
